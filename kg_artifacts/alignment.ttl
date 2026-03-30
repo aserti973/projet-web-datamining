@@ -1,0 +1,154 @@
+@prefix ex: <http://cinema-controversy.org/entity/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<http://cinema-controversy.org/entity/%C3%89ric_Fassin> owl:sameAs wd:Q3591122 .
+
+ex:Ad%C3%A8le_Haenel owl:sameAs wd:Q31353 .
+
+ex:Allen owl:sameAs wd:Q2648323 .
+
+ex:Alyssa_Milano owl:sameAs wd:Q189067 .
+
+ex:Andr%C3%A9_Previn owl:sameAs wd:Q155712 .
+
+ex:Anna_Graham_Hunter owl:sameAs wd:Q47463939 .
+
+ex:Anthony_Rapp owl:sameAs wd:Q39983 .
+
+ex:Ben_Affleck owl:sameAs wd:Q483118 .
+
+ex:Beno%C3%AEt_Jacquot owl:sameAs wd:Q818119 .
+
+ex:Blaine owl:sameAs wd:Q15059196 .
+
+ex:Bob_Weinstein owl:sameAs wd:Q888311 .
+
+ex:Burke owl:sameAs wd:Q1679720 .
+
+ex:Burton owl:sameAs wd:Q1259568 .
+
+ex:Carter owl:sameAs wd:Q16101731 .
+
+ex:Christopher_Plummer owl:sameAs wd:Q190523 .
+
+ex:Courtney_Love owl:sameAs wd:Q222071 .
+
+ex:David_Blaine owl:sameAs wd:Q353983 .
+
+ex:David_Carr owl:sameAs wd:Q110940756 .
+
+ex:Dominique_Boutonnat owl:sameAs wd:Q65939497 .
+
+ex:Douglas owl:sameAs wd:Q463035 .
+
+ex:Dustin_Hoffman owl:sameAs wd:Q42930 .
+
+ex:Dylan owl:sameAs wd:Q1814575 .
+
+ex:Dylan_Farrow owl:sameAs wd:Q100135417 .
+
+ex:Eliza_Dushku owl:sameAs wd:Q210200 .
+
+ex:Farrow owl:sameAs wd:Q27208296 .
+
+ex:Fr%C3%A9d%C3%A9ric_Mitterrand owl:sameAs wd:Q257752 .
+
+ex:Franco owl:sameAs wd:Q15303969 .
+
+ex:Gore_Vidal owl:sameAs wd:Q167821 .
+
+ex:Gwyneth_Paltrow owl:sameAs wd:Q34460 .
+
+ex:Harvey owl:sameAs wd:Q19767733 .
+
+ex:Harvey_Weinstein owl:sameAs wd:Q531599 .
+
+ex:Harvey_Weinsteins owl:sameAs wd:Q41832063 .
+
+ex:Heather_Unruh owl:sameAs wd:Q42869279 .
+
+ex:Hilarie_Burton owl:sameAs wd:Q229054 .
+
+ex:Hoffman owl:sameAs wd:Q224301 .
+
+ex:Hunter owl:sameAs wd:Q12020943 .
+
+ex:Ivana_Lowell owl:sameAs wd:Q75315625 .
+
+ex:J_Paul_Getty owl:sameAs wd:Q2919540 .
+
+ex:Jacques_Doillon owl:sameAs wd:Q710650 .
+
+ex:James_Franco owl:sameAs wd:Q306403 .
+
+ex:Jennifer_Wright owl:sameAs wd:Q120486144 .
+
+ex:Joel_Kramer owl:sameAs wd:Q102354627 .
+
+ex:Jor owl:sameAs wd:Q810 .
+
+ex:Jude_Doyle owl:sameAs wd:Q62536664 .
+
+ex:Judith_Godr%C3%A8che owl:sameAs wd:Q267542 .
+
+ex:Kathryn_Rossetter owl:sameAs wd:Q47475730 .
+
+ex:Ken_Auletta owl:sameAs wd:Q3719401 .
+
+ex:Kevin_Spacey owl:sameAs wd:Q25144 .
+
+ex:Kramer owl:sameAs wd:Q1158524 .
+
+ex:Louis_CK owl:sameAs wd:Q15079 .
+
+ex:Louis_Szekely owl:sameAs wd:Q15079 .
+
+ex:Maureen_Orth owl:sameAs wd:Q6792746 .
+
+ex:Melissa_Schuman owl:sameAs wd:Q6812877 .
+
+ex:Mia owl:sameAs wd:Q1747696 .
+
+ex:Mia_Farrow owl:sameAs wd:Q202725 .
+
+ex:Michael_Douglas owl:sameAs wd:Q119798 .
+
+ex:Moses owl:sameAs wd:Q13554012 .
+
+ex:Nick_Carter owl:sameAs wd:Q338748 .
+
+ex:Previn owl:sameAs wd:Q21509473 .
+
+ex:Quentin_Tarantino owl:sameAs wd:Q3772 .
+
+ex:Rachida_Dati owl:sameAs wd:Q27182 .
+
+ex:Rapp owl:sameAs wd:Q414592 .
+
+ex:Richard_Dreyfuss owl:sameAs wd:Q181799 .
+
+ex:Ridley_Scotts owl:sameAs wd:Q28405483 .
+
+ex:Roman_Polanski owl:sameAs wd:Q51552 .
+
+ex:Rossetter owl:sameAs wd:Q37474471 .
+
+ex:Satchel owl:sameAs wd:Q37267528 .
+
+ex:Seth_MacFarlane owl:sameAs wd:Q188492 .
+
+ex:Soon-Yi_Previn owl:sameAs wd:Q1140914 .
+
+ex:Spacey owl:sameAs wd:Q136759019 .
+
+ex:Tarana_Burke owl:sameAs wd:Q43177774 .
+
+ex:Tony_Montana owl:sameAs wd:Q629034 .
+
+ex:Virginie_Ballet owl:sameAs wd:Q106902093 .
+
+ex:Weinstein owl:sameAs wd:Q41566619 .
+
+ex:Woody_Allen owl:sameAs wd:Q25089 .
+

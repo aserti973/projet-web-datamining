@@ -1,0 +1,209 @@
+@prefix ex: <http://cinema-controversy.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://cinema-controversy.org/entity/%C3%89ric_Fassin> a schema1:Person ;
+    rdfs:label "Éric Fassin"^^xsd:string .
+
+ex:Ad%C3%A8le_Haenel a schema1:Person ;
+    rdfs:label "Adèle Haenel"^^xsd:string .
+
+ex:Allen a schema1:Person ;
+    rdfs:label "Allen"^^xsd:string .
+
+ex:Alyssa_Milano a schema1:Person ;
+    rdfs:label "Alyssa Milano"^^xsd:string .
+
+ex:Andr%C3%A9_Previn a schema1:Person ;
+    rdfs:label "André Previn"^^xsd:string .
+
+ex:Anthony_Rapp a schema1:Person ;
+    rdfs:label "Anthony Rapp"^^xsd:string .
+
+ex:Ashley_Judd%2C%5B16 a schema1:Person ;
+    rdfs:label "Ashley Judd,[16"^^xsd:string .
+
+ex:Asia_Argento a schema1:Person ;
+    rdfs:label "Asia Argento"^^xsd:string .
+
+ex:Beno%C3%AEt_Jacquot a schema1:Person ;
+    rdfs:label "Benoît Jacquot"^^xsd:string .
+
+ex:Bob_Weinstein a schema1:Person ;
+    rdfs:label "Bob Weinstein"^^xsd:string .
+
+ex:Burke a schema1:Person ;
+    rdfs:label "Burke"^^xsd:string .
+
+ex:Christopher_Plummer.%5B19%5D%5B20 a schema1:Person ;
+    rdfs:label "Christopher Plummer.[19][20"^^xsd:string .
+
+ex:Courtney_Love a schema1:Person ;
+    rdfs:label "Courtney Love"^^xsd:string .
+
+ex:David_Carr a schema1:Person ;
+    rdfs:label "David Carr"^^xsd:string .
+
+ex:Dominique_Boutonnat a schema1:Person ;
+    rdfs:label "Dominique Boutonnat"^^xsd:string .
+
+ex:Dylan a schema1:Person ;
+    rdfs:label "Dylan"^^xsd:string .
+
+ex:Dylan_Farrow a schema1:Person ;
+    rdfs:label "Dylan Farrow"^^xsd:string .
+
+ex:Emma_de_Caunes a schema1:Person ;
+    rdfs:label "Emma de Caunes"^^xsd:string .
+
+ex:Farrow a schema1:Person ;
+    rdfs:label "Farrow"^^xsd:string .
+
+ex:Fr%C3%A9d%C3%A9ric_Mitterrand a schema1:Person ;
+    rdfs:label "Frédéric Mitterrand"^^xsd:string .
+
+ex:Giuseppina_Sapio a schema1:Person ;
+    rdfs:label "Giuseppina Sapio"^^xsd:string .
+
+ex:Gore_Vidal a schema1:Person ;
+    rdfs:label "Gore Vidal"^^xsd:string .
+
+ex:Gwyneth_Paltrow a schema1:Person ;
+    rdfs:label "Gwyneth Paltrow"^^xsd:string .
+
+ex:Gwyneth_Paltrow%2C%5B15 a schema1:Person ;
+    rdfs:label "Gwyneth Paltrow,[15"^^xsd:string .
+
+ex:Harvey a schema1:Person ;
+    rdfs:label "Harvey"^^xsd:string .
+
+ex:Harvey_Weinstein a schema1:Person ;
+    rdfs:label "Harvey Weinstein"^^xsd:string .
+
+ex:Harvey_Weinstein%27s a schema1:Person ;
+    rdfs:label "Harvey Weinstein's"^^xsd:string .
+
+ex:Heather_Unruh a schema1:Person ;
+    rdfs:label "Heather Unruh"^^xsd:string .
+
+ex:Ir%C3%A8ne_Despontin_Lef%C3%A8vre a schema1:Person ;
+    rdfs:label "Irène Despontin Lefèvre"^^xsd:string .
+
+ex:Ivana_Lowell a schema1:Person ;
+    rdfs:label "Ivana Lowell"^^xsd:string .
+
+ex:J._Paul_Getty a schema1:Person ;
+    rdfs:label "J. Paul Getty"^^xsd:string .
+
+ex:Jacques_Doillon a schema1:Person ;
+    rdfs:label "Jacques Doillon"^^xsd:string .
+
+ex:James_Franco a schema1:Person ;
+    rdfs:label "James Franco"^^xsd:string .
+
+ex:Jennifer_Lawrence%2C%5B17 a schema1:Person ;
+    rdfs:label "Jennifer Lawrence,[17"^^xsd:string .
+
+ex:Jennifer_Wright a schema1:Person ;
+    rdfs:label "Jennifer Wright"^^xsd:string .
+
+ex:Jor a schema1:Person ;
+    rdfs:label "Jor"^^xsd:string .
+
+ex:Jude_Doyle a schema1:Person ;
+    rdfs:label "Jude Doyle"^^xsd:string .
+
+ex:Judith_Godr%C3%A8che a schema1:Person ;
+    rdfs:label "Judith Godrèche"^^xsd:string .
+
+ex:Julia_Castanier a schema1:Person ;
+    rdfs:label "Julia Castanier"^^xsd:string .
+
+ex:Ken_Auletta a schema1:Person ;
+    rdfs:label "Ken Auletta"^^xsd:string .
+
+ex:Kevin_Spacey a schema1:Person ;
+    rdfs:label "Kevin Spacey"^^xsd:string .
+
+ex:Maureen_Orth a schema1:Person ;
+    rdfs:label "Maureen Orth"^^xsd:string .
+
+ex:Mia a schema1:Person ;
+    rdfs:label "Mia"^^xsd:string .
+
+ex:Mia_Farrow a schema1:Person ;
+    rdfs:label "Mia Farrow"^^xsd:string .
+
+ex:Mia_Farrow%27s a schema1:Person ;
+    rdfs:label "Mia Farrow's"^^xsd:string .
+
+ex:Moses a schema1:Person ;
+    rdfs:label "Moses"^^xsd:string .
+
+ex:Polanski a schema1:Person ;
+    rdfs:label "Polanski"^^xsd:string .
+
+ex:Previn a schema1:Person ;
+    rdfs:label "Previn"^^xsd:string .
+
+ex:Quentin_Tarantino a schema1:Person ;
+    rdfs:label "Quentin Tarantino"^^xsd:string .
+
+ex:Rachida_Dati a schema1:Person ;
+    rdfs:label "Rachida Dati"^^xsd:string .
+
+ex:Rapp a schema1:Person ;
+    rdfs:label "Rapp"^^xsd:string .
+
+ex:Richard_Dreyfuss%27 a schema1:Person ;
+    rdfs:label "Richard Dreyfuss'"^^xsd:string .
+
+ex:Ridley_Scott%27s a schema1:Person ;
+    rdfs:label "Ridley Scott's"^^xsd:string .
+
+ex:Roberto_Cavazos%3B%5B13 a schema1:Person ;
+    rdfs:label "Roberto Cavazos;[13"^^xsd:string .
+
+ex:Roman_Polanski a schema1:Person ;
+    rdfs:label "Roman Polanski"^^xsd:string .
+
+ex:Ronan_Farrow%29.%5B1 a schema1:Person ;
+    rdfs:label "Ronan Farrow).[1"^^xsd:string .
+
+ex:Satchel a schema1:Person ;
+    rdfs:label "Satchel"^^xsd:string .
+
+ex:Seth_MacFarlane a schema1:Person ;
+    rdfs:label "Seth MacFarlane"^^xsd:string .
+
+ex:Soon-Yi%2C%5B21 a schema1:Person ;
+    rdfs:label "Soon-Yi,[21"^^xsd:string .
+
+ex:Soon-Yi_Previn a schema1:Person ;
+    rdfs:label "Soon-Yi Previn"^^xsd:string .
+
+ex:Spacey a schema1:Person ;
+    rdfs:label "Spacey"^^xsd:string .
+
+ex:Tarana_Burke a schema1:Person ;
+    rdfs:label "Tarana Burke"^^xsd:string .
+
+ex:Tarana_Burke.%5B4 a schema1:Person ;
+    rdfs:label "Tarana Burke.[4"^^xsd:string .
+
+ex:Tony_Montana a schema1:Person ;
+    rdfs:label "Tony Montana"^^xsd:string .
+
+ex:Uma_Thurman%2C%5B18 a schema1:Person ;
+    rdfs:label "Uma Thurman,[18"^^xsd:string .
+
+ex:Virginie_Ballet a schema1:Person ;
+    rdfs:label "Virginie Ballet"^^xsd:string .
+
+ex:Weinstein a schema1:Person ;
+    rdfs:label "Weinstein"^^xsd:string .
+
+ex:Woody_Allen a schema1:Person ;
+    rdfs:label "Woody Allen"^^xsd:string .
+
