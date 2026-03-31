@@ -35,7 +35,7 @@ def crawl_and_clean(urls):
                     word_count = len(text.split())
                     # Le TD demande de vérifier si la page est "utile" (> 500 mots)
                     if word_count > 500:
-                        print(f"  -> ✅ Succès : {word_count} mots extraits.")
+                        print(f"  ->  Succès : {word_count} mots extraits.")
                         
                         # Création de l'objet JSON
                         data = {
@@ -46,9 +46,9 @@ def crawl_and_clean(urls):
                         f.write(json.dumps(data, ensure_ascii=False) + '\n')
                         valid_pages += 1
                     else:
-                        print(f"  -> ❌ Rejeté : Page trop courte ({word_count} mots).")
+                        print(f"  ->  Rejeté : Page trop courte ({word_count} mots).")
             else:
-                print(f"  -> ❌ Erreur de téléchargement pour {url}")
+                print(f"  ->  Erreur de téléchargement pour {url}")
                 
     print(f"\nTerminé ! {valid_pages} pages sauvegardées dans {OUTPUT_FILE}")
 

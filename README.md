@@ -1,54 +1,86 @@
 # Hollywood Controversy Knowledge Graph & RAG System
 
-Ce projet académique implémente un pipeline complet d'ingénierie des connaissances, allant de l'extraction d'entités nommées (NER) à la création d'un système de Question-Réponse (RAG) basé sur un graphe RDF massif (plus de 52 000 triplets). Il modélise les réseaux de collaborations au sein de l'industrie cinématographique hollywoodienne.
+Ce projet académique implémente un pipeline complet d’ingénierie des connaissances, allant de l’extraction d’entités nommées (NER) à la mise en place d’un système de Question-Réponse (RAG) basé sur un graphe RDF massif (plus de **52 000 triplets**).
 
-## 🛠 Prérequis et Installation
+L’objectif est de modéliser et analyser les réseaux de collaboration au sein de l’industrie cinématographique hollywoodienne.
 
-1. **Environnement Python** : Python 3.9 ou supérieur recommandé.
-2. **Ollama** : Le système RAG utilise un LLM en local. Vous devez installer [Ollama](https://ollama.com/) et télécharger le modèle utilisé :
-   ollama pull llama3.2
-3. Dépendances Python : Installez les bibliothèques requises et le modèle linguistique Spacy :
-    pip install -r requirements.txt
-    python -m spacy download en_core_web_trf
+---
 
-Ordre d'Exécution du Pipeline
-Pour reproduire les résultats du rapport, exécutez les scripts dans l'ordre suivant depuis la racine du projet :
+## Prérequis
 
-1. Extraction d'Information (NER)
-Extrait les entités (Personnes, Organisations) depuis les textes bruts.
-    python src/ie/ner_extraction.py
+- **Python** : version 3.9 ou supérieure
+- **Ollama** : nécessaire pour exécuter le LLM en local  
+  https://ollama.com/
 
-2. Construction et Expansion du Graphe (KG)
-Crée le graphe RDF de base, l'aligne avec Wikidata (owl:sameAs), puis l'étend massivement via des requêtes SPARQL.
-    python src/kg/build_initial_kg.py
-    python src/kg/align_entities.py
-    python src/kg/expand_kg.py
+### Installation du modèle LLM
 
-3. Raisonnement Sémantique (SWRL)
-Applique des règles logiques pour déduire de nouvelles relations implicites (ex: workedWith).
-    python src/reason/swrl_reasoning.py
+```bash
+ollama pull llama3.2
+```
+## Installation
 
-4. Apprentissage de Représentations (KGE)
-Entraîne les modèles TransE et ComplEx sur le graphe (Link Prediction).
-    python src/kge/train_kge.py
+Installez les dépendances Python ainsi que le modèle linguistique spaCy :
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_trf
+```
+## Pipeline d’Exécution
 
-5. Interrogation Sémantique (RAG)
-Lance le système de Question-Réponse. Note : Ce module utilise une extraction hybride optimisée (API native RDFlib + Python) pour contourner les limites de temps de calcul de SPARQL sur un graphe dense, offrant une réponse en une fraction de seconde.
-    python src/rag/rag_sparql.py
+Pour reproduire les résultats du projet, exécutez les scripts dans l’ordre suivant depuis la racine :
 
-Architecture du Projet
-data/ : Contient les textes sources et les extractions CSV (NER).
+## 1️⃣ Extraction d’Information (NER)
 
-kg_artifacts/ : Contient l'ontologie de base (.owl) et le graphe final étendu (expanded.nt).
+Extraction des entités nommées (personnes, organisations) à partir de textes bruts.
+```bash
+python src/ie/ner_extraction.py
+```
+## 2️⃣ Construction et Expansion du Graphe (Knowledge Graph)
+Création du graphe RDF initial
+Alignement avec Wikidata (owl:sameAs)
+Enrichissement via requêtes SPARQL
+```bash
+python src/kg/build_initial_kg.py
+python src/kg/align_entities.py
+python src/kg/expand_kg.py
+```
+## 3️⃣ Raisonnement Sémantique (SWRL)
 
-src/ : Code source divisé par modules :
+Application de règles logiques pour inférer de nouvelles relations implicites
+(exemple : workedWith).
+```bash
+python src/reason/swrl_reasoning.py
+```
+## 4️⃣ Apprentissage de Représentations (KGE)
 
-ie/ : Information Extraction
+Entraînement de modèles de Knowledge Graph Embeddings :
 
-kg/ : Knowledge Graph construction & expansion
+TransE
+ComplEx
 
-kge/ : Knowledge Graph Embeddings
+Objectif : prédiction de liens (link prediction).
+```bash
+python src/kge/train_kge.py
+```
+## 5️⃣ Interrogation Sémantique (RAG)
 
-rag/ : Retrieval-Augmented Generation
+Lancement du système de Question-Réponse basé sur le graphe.
 
-reason/ : Inférence logique
+Optimisation importante :
+Ce module utilise une approche hybride (API native RDFlib + Python) pour contourner les limitations de performance de SPARQL sur des graphes denses, permettant des réponses en temps quasi instantané.
+```bash
+python src/rag/rag_sparql.py
+```
+## Architecture du Projet
+```bash
+.
+├── data/               # Textes sources + extractions NER (CSV)
+├── kg_artifacts/      # Ontologie (.owl) + graphe étendu (.nt)
+├── src/
+│   ├── ie/            # Extraction d'information (NER)
+│   ├── kg/            # Construction, alignement et expansion du graphe
+│   ├── reason/        # Raisonnement logique (SWRL)
+│   ├── kge/           # Modèles d'embeddings (TransE, ComplEx)
+│   └── rag/           # Système RAG (Question-Réponse)
+├── requirements.txt
+└── README.md
+```

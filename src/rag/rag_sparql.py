@@ -143,7 +143,7 @@ def interroger_graphe(graph, question, schema_summary):
     print(f"[INFO] Recherche Turbo-Python pour : {nom_cible}")
     start = time.time()
 
-    # 1. Trouver l'URI de la personne cible (Tarantino)
+    # 1. Trouver l'URI de la personne cible 
     target_uri = None
     for s, p, o in graph.triples((None, rdflib.RDFS.label, None)):
         if nom_cible in str(o).lower():
@@ -189,12 +189,13 @@ def generer_reponse_finale(question, contexte_brut):
         return "Aucune collaboration fiable trouvée dans le graphe."
 
     prompt = f"""
-Tu es un assistant factuel STRICT.
+Tu es un assistant factuel.
 
 Règles :
-- Réponds UNIQUEMENT avec les données fournies
-- N'invente RIEN
-- Si les données sont insuffisantes → dis-le
+- Réponds UNIQUEMENT en utilisant les données fournies ci-dessous.
+- Pour déterminer "qui a le plus collaboré", base-toi EXCLUSIVEMENT sur le nombre de projets/collaborations indiqué. Celui qui a le plus grand nombre est la bonne réponse.
+- Rédige une réponse naturelle et directe. 
+- N'invente aucune autre information.
 
 DONNEES:
 {contexte_brut}

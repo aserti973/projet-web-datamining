@@ -7,7 +7,7 @@ DATA_DIR = "data/"
 RESULTS_DIR = "reports/"
 
 def train_with_early_stopping():
-    print("--- 🧠 ENTRAÎNEMENT KGE OPTIMISÉ (AVEC EARLY STOPPING) ---")
+    print("--- ENTRAÎNEMENT KGE OPTIMISÉ (AVEC EARLY STOPPING) ---")
     
     train_path = os.path.join(DATA_DIR, "train.txt")
     valid_path = os.path.join(DATA_DIR, "valid.txt")
@@ -30,7 +30,7 @@ def train_with_early_stopping():
     models = ['TransE', 'ComplEx']
 
     for model_name in models:
-        print(f"\n🚀 Lancement de l'entraînement pour {model_name}...")
+        print(f"\n Lancement de l'entraînement pour {model_name}...")
         print("L'IA s'arrêtera automatiquement dès qu'elle détectera un surapprentissage.")
         
         result = pipeline(
@@ -50,7 +50,7 @@ def train_with_early_stopping():
         h1  = result.get_metric('hits@1')
         h10 = result.get_metric('hits@10')
 
-        print(f"✅ {model_name} terminé ! MRR: {mrr:.4f} | Hits@10: {h10:.4f}")
+        print(f"{model_name} terminé ! MRR: {mrr:.4f} | Hits@10: {h10:.4f}")
 
         results_list.append({
             'Model': model_name,
@@ -60,7 +60,7 @@ def train_with_early_stopping():
         })
 
     # --- AFFICHAGE ET SAUVEGARDE ---
-    print("\n📊 TABLEAU COMPARATIF FINAL (OPTIMISÉ) :")
+    print("\n TABLEAU COMPARATIF FINAL (OPTIMISÉ) :")
     df_results = pd.DataFrame(results_list)
     print(df_results.to_string(index=False))
     
